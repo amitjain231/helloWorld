@@ -72,6 +72,21 @@
 	
 	<script type="text/javascript">
 		
+		document.addEventListener("deviceready", onDeviceReady, false);
+		function onDeviceReady() {
+            document.addEventListener("backbutton", onBackKeyPress, false);
+        }
+        function onBackKeyPress() {
+            
+			if (confirm("Are you sure you want to logout?")) {
+				/* Here is where my AJAX code for logging off goes */
+			}
+			else {
+				return false;
+			}
+            
+        }
+		
 		$(document).bind("pagechangefailed", function(event, data) {
 			$.mobile.loading('hide');
 			alert("pagechangefailed"); 
@@ -99,17 +114,17 @@
 			
 			if( this.id == "id_a_pageone_1"  || this.id == "id_a_pagetwo_1" || this.id == "id_a_pagethree_1" )
 			{
-				$.mobile.changePage( "#pageone", { transition: "none" });
+				$.mobile.changePage( "#pageone", { transition: "pop" });
 				e.preventDefault();
 			}
 			if( this.id == "id_a_pageone_2"  || this.id == "id_a_pagetwo_2" || this.id == "id_a_pagethree_2" )
 			{
-				$.mobile.changePage( "#pagetwo", { transition: "none" });
+				$.mobile.changePage( "#pagetwo", { transition: "pop" });
 				e.preventDefault();
 			}
-			if( this.id == "id_a_pageone_3"  || this.id == "id_a_pagetwo_2" || this.id == "id_a_pagethree_3" )
+			if( this.id == "id_a_pageone_3"  || this.id == "id_a_pagetwo_3" || this.id == "id_a_pagethree_3" )
 			{
-				$.mobile.changePage( "#pagethree", { transition: "none" });
+				$.mobile.changePage( "#pagethree", { transition: "pop" });
 				e.preventDefault();
 			}
 			
