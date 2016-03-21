@@ -2,16 +2,14 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.vardhamanbullion.live"
-        versionCode="13" 
+        versionCode="1" 
         version   = "1.0.0">
 
 
-    <name>Vardhaman Bullion</name>
+    <name>HelloWorld</name>
 
     <description>
-        Vardhaman Bullion is a renowned company providing Bullion, Jewellery (Silver and Gold) in India. Established in 
-        Jan 2000, it has grown leaps and bounds and is now a leading company providing competitive rates and impeccable 
-        service
+        HelloWorld - Amit kumar Jain's Test Program
     </description>
 
     <author href="http://www.magicbul.com" email="amitjain231@gmail.com">
